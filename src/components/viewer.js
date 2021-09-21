@@ -22,7 +22,7 @@ const Viewer = () => {
                     sequenceMode: true,
                     tileSources: tileSources,
                     showNavigator: true,
-                    prefixUrl: 'https://github.swarthmore.edu/pages/DS/gatsby-openseadragon'
+                    prefixUrl: 'https://github.swarthmore.edu/pages/DS/gatsby-openseadragon/'
                 });
             });
         }
