@@ -13,8 +13,7 @@ const Viewer = () => {
             import('openseadragon').then(OpenSeaDragon => {
                 // Set the tile sources.
                 const tileSources = [
-                    "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000001.jp2/info.json",
-                    "https://libimages1.princeton.edu/loris/pudl0001%2F4609321%2Fs42%2F00000002.jp2/info.json",
+                    encodeURI("https://digitalcollections.tricolib.brynmawr.edu/iiif/2/sc:203287~JP2~./info.json")
                 ];
                 // Create the viewer.
                 const viewer = new OpenSeaDragon.default({

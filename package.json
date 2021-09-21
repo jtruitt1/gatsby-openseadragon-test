@@ -10,7 +10,7 @@
   "repository": "https://github.swarthmore.edu/DS/gatsby-openseadragon.git",
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop -p 1234",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
