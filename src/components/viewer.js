@@ -21,7 +21,8 @@ const Viewer = () => {
                     element: viewerRef.current,
                     sequenceMode: true,
                     tileSources: tileSources,
-                    showNavigator: true
+                    showNavigator: true,
+                    prefixUrl: 'https://github.swarthmore.edu/pages/DS/gatsby-openseadragon'
                 });
             });
         }
