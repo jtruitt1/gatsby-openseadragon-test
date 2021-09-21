@@ -32,7 +32,7 @@ const Viewer = () => {
         <div 
             id="openseadragon" 
             ref={viewerRef} 
-            style={{ height: 1000, backgroundColor: '#000', color: '#fff' }}
+            style={{ height: 600, width: '100%' }}
         />
     );
 }
