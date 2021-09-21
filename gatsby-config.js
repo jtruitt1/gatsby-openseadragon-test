@@ -1,5 +1,5 @@
 module.exports = {
-  prefixPath: "/gatsby-openseadragon"
+  prefixPath: "/gatsby-openseadragon",
   siteMetadata: {
     title: "Gatsby with OpenSeaDragon",
   },
