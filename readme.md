@@ -1,3 +1,3 @@
 # Gatsby + OpenSeaDragon Demo
 
-See deployment on gh-pages branch
+See deployment at https://github.swarthmore.edu/pages/DS/gatsby-openseadragon
