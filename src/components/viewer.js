@@ -13,7 +13,7 @@ const Viewer = () => {
             import('openseadragon').then(OpenSeaDragon => {
                 // Set the tile sources.
                 const tileSources = [
-                    encodeURI("https://digitalcollections.tricolib.brynmawr.edu/iiif/2/sc:203287~JP2~./info.json")
+                    encodeURI("https://web.tricolib.brynmawr.edu/digitalcollections/node/334754/page-manifest")
                 ];
                 // Create the viewer.
                 const viewer = new OpenSeaDragon.default({
@@ -21,7 +21,7 @@ const Viewer = () => {
                     sequenceMode: true,
                     tileSources: tileSources,
                     showNavigator: true,
-                    prefixUrl: 'https://github.swarthmore.edu/pages/DS/gatsby-openseadragon/'
+                    prefixUrl: 'https://github.swarthmore.edu/pages/jtruitt1/gatsby-openseadragon/'
                 });
             });
         }
