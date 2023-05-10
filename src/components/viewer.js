@@ -19,7 +19,7 @@ const Viewer = () => {
           const pageManifest = await response.json()
           return pageManifest
         };
-        const pageManifest = getPageManifest(pageManifestUrl)
+        const pageManifest = getPageManifest(pageManifestUrl).then()
         console.log(pageManifest);
         const manifestUrl = pageManifest.sequences[0].canvases[0].images[0].resource.service['@id']
 
