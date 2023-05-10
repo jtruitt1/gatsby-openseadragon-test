@@ -12,20 +12,9 @@ const Viewer = () => {
     if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       import('openseadragon').then(OpenSeaDragon => {
 
-        // Get manifest URL
-        const pageManifestUrl = encodeURI("https://web.tricolib.brynmawr.edu/digitalcollections/node/334752/page-manifest")
-        const getPageManifest = async (url) => {
-          const response = await fetch(url)
-          const pageManifest = await response.json()
-          return pageManifest
-        };
-        const pageManifest = getPageManifest(pageManifestUrl).then()
-        console.log(pageManifest);
-        const manifestUrl = pageManifest.sequences[0].canvases[0].images[0].resource.service['@id']
-
         // Set the tile sources.
         const tileSources = [
-          encodeURI(manifestUrl)
+          encodeURI("https://web.tricolib.brynmawr.edu/digitalcollections/cantaloupe/iiif/2/https%3A%2F%2Fdigitalcollections.tricolib.brynmawr.edu%2F_flysystem%2Ffedora%2F2023-03%2F1270_0.jp2")
         ];
         // Create the viewer.
         const viewer = new OpenSeaDragon.default({
