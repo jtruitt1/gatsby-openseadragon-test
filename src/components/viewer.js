@@ -20,7 +20,7 @@ const Viewer = () => {
           return pageManifest
         };
         const pageManifest = getPageManifest(pageManifestUrl)
-        console.log(pageManifest.sequences[0])
+        console.log(pageManifest);
         const manifestUrl = pageManifest.sequences[0].canvases[0].images[0].resource.service['@id']
 
         // Set the tile sources.
