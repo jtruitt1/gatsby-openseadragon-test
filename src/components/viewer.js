@@ -13,7 +13,7 @@ const Viewer = () => {
       import('openseadragon').then(OpenSeaDragon => {
         // Set the tile sources.
         const tileSources = [
-          encodeURI("https://web.tricolib.brynmawr.edu/digitalcollections/node/334751/manifest")
+          encodeURI("https://web.tricolib.brynmawr.edu/digitalcollections/node/334752/page-manifest")
         ];
         // Create the viewer.
         const viewer = new OpenSeaDragon.default({
