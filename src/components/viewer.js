@@ -16,7 +16,7 @@ const Viewer = () => {
         const pageManifestUrl = encodeURI("https://web.tricolib.brynmawr.edu/digitalcollections/node/334752/page-manifest")
         const getPageManifest = async (url) => {
           const response = await fetch(url)
-          let pageManifest = await response.json()
+          const pageManifest = await response.json()
           return pageManifest
         };
         const pageManifest = getPageManifest(pageManifestUrl)
