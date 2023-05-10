@@ -18,9 +18,9 @@ const Viewer = () => {
           const response = await fetch(url)
           let pageManifest = await response.json()
           return pageManifest
-        }
-        pageManifest = getPageManifest(pageManifestUrl)
-        manifestUrl = pageManifest.sequences[0].canvases[0].images[0].resource.service['@id']
+        };
+        const pageManifest = getPageManifest(pageManifestUrl)
+        const manifestUrl = pageManifest.sequences[0].canvases[0].images[0].resource.service['@id']
 
         // Set the tile sources.
         const tileSources = [
