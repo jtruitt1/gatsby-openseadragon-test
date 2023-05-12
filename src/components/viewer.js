@@ -3,8 +3,11 @@ import * as React from 'react';
 const Viewer = () => {
 
   // For debugging Cantaloupe server issues
-  let test = fetch("https://digitalcollections.tricolib.brynmawr.edu/node/335321/manifest")
-  test.then(data => console.log(data.json()))
+  let test = fetch("https://digitalcollections.tricolib.brynmawr.edu/node/335321/manifest", { mode: "no-cors" })
+  test.finally(data => console.log(data.json()))
+
+  let image = fetch("https://digitalcollections.tricolib.brynmawr.edu/_flysystem/fedora/2023-03/1257_1.jp2")
+  image.finally(data => console.log(data.json()))
 
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
