@@ -4,6 +4,7 @@ const Viewer = () => {
 
   // For debugging Cantaloupe server issues
   let test = fetch("https://digitalcollections.tricolib.brynmawr.edu/node/335321/manifest")
+  test.then(data => console.log(data.json()))
 
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
