@@ -28,6 +28,7 @@ const Viewer = () => {
           tileSources: tileSources,
           showNavigator: true,
           prefixUrl: 'https://github.swarthmore.edu/pages/jtruitt1/gatsby-openseadragon/public/',
+          crossOriginPolicy: 'Anonymous',
           ajaxHeaders: { 'Authorization': 'Any value works, apparently' }
         });
       });
