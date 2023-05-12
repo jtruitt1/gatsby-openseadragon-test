@@ -1,13 +1,18 @@
 import * as React from 'react';
 
+async function fetchAsync(url) {
+  let response = await fetch(url);
+  return response;
+}
+
 const Viewer = () => {
 
   // For debugging Cantaloupe server issues
-  let test = fetch("https://digitalcollections.tricolib.brynmawr.edu/node/335321/manifest", { mode: "no-cors" })
-  test.finally(data => console.log(data.json()))
+  let manifest = fetchAsync("https://digitalcollections.tricolib.brynmawr.edu/node/335321/manifest")
+  manifest.finally(data => console.log(data))
 
-  let image = fetch("https://digitalcollections.tricolib.brynmawr.edu/_flysystem/fedora/2023-03/1257_1.jp2")
-  image.finally(data => console.log(data.json()))
+  let image = fetchAsync("https://digitalcollections.tricolib.brynmawr.edu/_flysystem/fedora/2023-03/1257_1.jp2")
+  image.finally(data => console.log(data))
 
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
