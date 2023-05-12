@@ -9,16 +9,16 @@ const Viewer = () => {
 
   // For debugging Cantaloupe server issues
   let unproxiedManifest = fetchAsync("https://digitalcollections.tricolib.brynmawr.edu/node/335321/manifest")
-  unproxiedManifest.finally(data => console.log("unproxiedManifest", data))
+  unproxiedManifest.then(data => console.log("unproxiedManifest", data), data => console.log("unproxiedManifest", data))
 
   let unproxiedImage = fetchAsync("https://digitalcollections.tricolib.brynmawr.edu/_flysystem/fedora/2023-03/1257_1.jp2")
-  unproxiedImage.finally(data => console.log("unproxiedImage", data))
+  unproxiedImage.then(data => console.log("unproxiedImage", data), data => console.log("unproxiedImage", data))
 
   let proxiedManifest = fetchAsync("https://web.tricolib.brynmawr.edu/digitalcollections/node/335321/manifest")
-  proxiedManifest.finally(data => console.log("proxiedManifest", data))
+  proxiedManifest.then(data => console.log("proxiedManifest", data), data => console.log("proxiedManifest", data))
 
   let proxiedImage = fetchAsync("https://web.tricolib.brynmawr.edu/digitalcollections/_flysystem/fedora/2023-03/1257_1.jp2")
-  proxiedImage.finally(data => console.log("proxiedImage", data))
+  proxiedImage.then(data => console.log("proxiedImage", data), data => console.log("proxiedImage", data))
 
 
   // Create a ref for the viewer.
