@@ -2,6 +2,9 @@ import * as React from 'react';
 
 const Viewer = () => {
 
+  // For debugging Cantaloupe server issues
+  let test = fetch("https://digitalcollections.tricolib.brynmawr.edu/node/335321/manifest")
+
   // Create a ref for the viewer.
   const viewerRef = React.useRef(null);
 
