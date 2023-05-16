@@ -19,7 +19,7 @@ const Viewer = () => {
 
         // Set the tile sources.
         const tileSources = [
-          "https://web.tricolib.brynmawr.edu/digitalcollections/cantaloupe/iiif/2/https%3A%2F%2Fdigitalcollections.tricolib.brynmawr.edu%2F_flysystem%2Ffedora%2F2023-03%2F1288_0.jp2/full/full/0/default.jpg"
+          "https://digitalcollections-staging.tricolib.brynmawr.edu/cantaloupe/iiif/2/https%3A%2F%2Fdigitalcollections-staging.tricolib.brynmawr.edu%2F_flysystem%2Ffedora%2F2022-06%2F160-Service%2520File.jpg/info.json"
         ];
         // Create the viewer.
         const viewer = new OpenSeaDragon.default({
