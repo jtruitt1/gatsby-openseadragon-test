@@ -28,8 +28,6 @@ const Viewer = () => {
           tileSources: tileSources,
           showNavigator: true,
           prefixUrl: 'https://jtruitt1.github.io/gatsby-openseadragon-test/public/',
-          // crossOriginPolicy: 'Anonymous',
-          ajaxHeaders: { 'Authorization': 'Any value works, apparently' }
         });
       });
     }
