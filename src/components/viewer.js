@@ -27,7 +27,7 @@ const Viewer = () => {
           sequenceMode: true,
           tileSources: tileSources,
           showNavigator: true,
-          prefixUrl: 'https://github.swarthmore.edu/pages/jtruitt1/gatsby-openseadragon/public/',
+          prefixUrl: 'https://jtruitt1.github.io/gatsby-openseadragon-test/public/',
           // crossOriginPolicy: 'Anonymous',
           ajaxHeaders: { 'Authorization': 'Any value works, apparently' }
         });
