@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/public/",
+  pathPrefix: "/gatsby-openseadragon-test/public/",
   siteMetadata: {
     title: "Gatsby with OpenSeaDragon",
   },
