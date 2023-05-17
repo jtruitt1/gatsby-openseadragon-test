@@ -1,3 +1,5 @@
 # Gatsby + OpenSeaDragon Demo
 
-See deployment at https://github.swarthmore.edu/pages/jtruitt1/gatsby-openseadragon
+Tiny site to test whether OpenSeaDragon can be implemented in Gatsby JS and pull from the TriCo Islandora IIIF servers. 
+
+Originally created by Tony Weed. Dabbled with by James Truitt.
